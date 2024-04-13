@@ -6,9 +6,19 @@ type SearchProps = {
   }[];
   search: string;
   setSearch: (search: string) => void;
+  isCaught: boolean;
+  setIsCaught: (isCaught: boolean) => void;
 };
 
-const Search = ({ data, search, setSearch }: SearchProps) => {
+const Search = ({
+  data,
+  search,
+  setSearch,
+  isCaught,
+  setIsCaught,
+}: SearchProps) => {
+  const uniqueTypes = Array.from(new Set(data.map((pokemon) => pokemon.type)));
+
   return (
     <div className="search-area">
       <form action="" className="form">
@@ -21,15 +31,17 @@ const Search = ({ data, search, setSearch }: SearchProps) => {
           onChange={(e) => setSearch(e.target.value)}
         />
         <label htmlFor="">Pokemon Types</label>
-        <select className="select-type" id="select-type">
-          {data.map((pokemon) => {
-            return (
-              <option value={pokemon.type}>
-                {pokemon.type}
-              </option>
-            );
-          })}
-          ;
+        <select
+          className="select-type"
+          id="select-type"
+          onChange={(e) => setSearch(e.target.value)}
+        >
+          <option value="">-- Select --</option>
+          {uniqueTypes.map((type) => (
+            <option key={type} value={type}>
+              {type}
+            </option>
+          ))}
         </select>
         <div className="checker">
           <input type="checkbox" name="" id="" />

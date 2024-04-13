@@ -4,6 +4,7 @@ import Search from "./Search";
 
 const Home = () => {
   const [search, setSearch] = useState("");
+  const [isCaught, setIsCaught] = useState(false);
 
   const [data, setData] = useState([
     {
@@ -30,7 +31,13 @@ const Home = () => {
 
   return (
     <div className="content">
-      <Search data={data} search={search} setSearch={setSearch} />
+      <Search
+        data={data}
+        search={search}
+        setSearch={setSearch}
+        /*isChaught={isChaugch}
+        setIsChaught={setIsCaught}*/
+      />
       <PokemonList
         data={data.filter((pokemon) =>
           pokemon.name.toLowerCase().includes(search.toLowerCase())
