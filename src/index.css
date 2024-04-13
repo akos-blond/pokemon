@@ -80,13 +80,13 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-.list-title{
+.list-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin: 0 0 2vw 3vw;
   font-weight: bold;
-  color:rgb(109, 109, 109);
+  color: rgb(109, 109, 109);
 }
 
 thead {
@@ -94,7 +94,7 @@ thead {
   height: 2.5vw;
 }
 
-tbody{
+tbody {
   display: grid;
 }
 
@@ -104,17 +104,21 @@ tr {
   text-align: center;
 }
 
-.pokemon-list{
+.pokemon-list {
   display: flex;
 }
 
-.pokemon-btn{
+.pokemon-btn {
   height: 1.8vw;
   width: 100%;
   display: flex;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 6px;
+  margin-bottom: 0.5vw;
+  cursor: pointer;
 }
 
-.data-holder{
+.data-holder {
   width: 33%;
   text-align: center;
 }
@@ -127,7 +131,7 @@ tr {
   border: none;
   border-radius: 6px;
   cursor: pointer;
-
+  margin-left: 2vw;
 }
 
 .release-btn {
@@ -138,6 +142,7 @@ tr {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  margin-left: 2vw;
 }
 
 .profile-container {
