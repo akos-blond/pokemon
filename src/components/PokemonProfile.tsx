@@ -29,6 +29,7 @@ const PokemonProfile = () => {
               <td>Status</td>
               <th>-</th>
             </tr>
+          <button className="release-btn" >Release</button>
           </table>
         </div>
       </div>

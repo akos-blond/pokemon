@@ -72,12 +72,21 @@ input[type="checkbox"] {
 
 .list {
   margin: 5vw auto;
-  width: 80%;
+  width: 60%;
   font-size: small;
 }
 
 .list-table {
-  width: 60%;
+  width: 100%;
+}
+
+.list-title{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 0 2vw 3vw;
+  font-weight: bold;
+  color:rgb(109, 109, 109);
 }
 
 thead {
@@ -85,9 +94,28 @@ thead {
   height: 2.5vw;
 }
 
+tbody{
+  display: grid;
+}
+
 tr {
   height: 2.5vw;
   border: 1px solid rgb(213, 213, 213);
+  text-align: center;
+}
+
+.pokemon-list{
+  display: flex;
+}
+
+.pokemon-btn{
+  height: 1.8vw;
+  width: 100%;
+  display: flex;
+}
+
+.data-holder{
+  width: 33%;
   text-align: center;
 }
 
@@ -99,6 +127,7 @@ tr {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+
 }
 
 .release-btn {
