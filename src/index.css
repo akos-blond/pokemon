@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  width: 100%;
+  background-color: rgba(174, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.content {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.pokemon-logo {
+  height: 2.5vw;
+  margin: 1vw;
+}
+
+.navbar p {
+  text-align: center;
+  margin: 2vw;
+}
+
+.search-area {
+  margin: 5vw auto;
+  width: 70%;
+}
+
+.form {
+  display: grid;
+}
+
+label {
+  height: 2.5vw;
+  color: rgb(109, 109, 109);
+  font-size: small;
+}
+input {
+  width: 60%;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid rgb(213, 213, 213);
+  margin-bottom: 2vw;
+}
+
+select {
+  width: 60%;
+  height: 2vw;
+  padding: 5px;
+  border: 1px solid rgb(213, 213, 213);
+  border-radius: 5px;
+  color: gray;
+  margin-bottom: 30px;
+}
+.checker {
+  display: flex;
+  align-items: center;
+}
+input[type="checkbox"] {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 0.5vw;
+  border: 1px solid rgb(213, 213, 213);
+}
+
+.list {
+  margin: 5vw auto;
+  width: 80%;
+  font-size: small;
+}
+
+.list-table {
+  width: 60%;
+}
+
+thead {
+  color: rgb(109, 109, 109);
+  height: 2.5vw;
+}
+
+tr {
+  height: 2.5vw;
+  border: 1px solid rgb(213, 213, 213);
+  text-align: center;
+}
+
+.catch-btn {
+  width: 4.2vw;
+  height: 1.7vw;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.release-btn {
+  width: 4.2vw;
+  height: 1.7vw;
+  background-color: rgb(255, 191, 0);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-container {
+  margin: 5vw auto;
+  width: 70%;
+}
+.backToSearch-btn {
+  height: 2vw;
+  width: 13vw;
+  border: none;
+  background: white;
+  cursor: pointer;
+  font-size: 0.8vw;
+  text-align: start;
+  padding: 4px;
+}
+
+.pokemon-details {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.img-holder {
+  width: 100%;
+  text-align: center;
+  display: grid;
+}
+
+.pokemon-img {
+  height: 15vw;
+  border: 4px solid rgb(255, 191, 0);
+}
+
+.details-table-holder {
+  align-items: start;
+  margin-top: 1vw;
+}
